@@ -12,7 +12,7 @@ constexpr int CalculateDeterminant(const std::array<std::array<int, Size>, Size>
     }
     return (currentSize == 1) ? mat[Size - 1][__builtin_ctz(M)] : (Size % 2 == 0 ? -detValue : detValue);
 }
-// Функция, которая инициализирует параметры
+
 template <int N>
 constexpr int Det(const std::array<std::array<int, N>, N> &matrix)
 {
