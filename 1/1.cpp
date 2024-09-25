@@ -28,5 +28,13 @@ int main() {
 
     constexpr int result = Det<3>(matrix);
     std::cout << result << std::endl;
+    constexpr std::array<std::array<int, 4>, 4> matrix4 = { { 
+        {0, 1, 2, 4}, 
+        {1, 2, 3, 7}, 
+        {2, 3, 7, 1}, 
+        {1, 3, 0, -5} 
+    }};
+    constexpr int result4 = Det<4>(matrix4);
+    std::cout << result4 << std::endl;
     return 0;
 }
