@@ -71,7 +71,7 @@ int main() {
 
     try {
         // Корректный вызов
-        int x = a.get<int>(); // Should succeed
+        int x = a.get<int>(); 
         std::cout << x << std::endl;
 
         // Некорректный тип
